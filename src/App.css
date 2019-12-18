@@ -8,12 +8,18 @@ html[data-theme='dark'] {
 	--secondary-color: #282c34;
 }
 
-.app {
+.app,
+.side-drawer {
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
 }
 
-.container {
+.side-drawer {
+	height: 100vh;
+}
+
+.container,
+.people {
 	height: 90vh;
 	display: flex;
 	align-items: center;
@@ -82,19 +88,18 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-p {
+.title {
 	position: absolute;
-	margin-top: 20px;
+	margin-top: 19px;
 	width: 100%;
 	text-align: center;
 	font-size: 1.4em;
 }
 
-.people {
+.people-icon {
 	margin-left: 90%;
 	margin-top: 20px;
-	width: 50px;
-	height: 24px;
+	cursor: pointer;
 }
 
 hr {
@@ -105,10 +110,10 @@ hr {
 input {
 	border: 1px solid black;
 	border-radius: 5px;
-	padding: 5px;
+	padding: 8px;
 	max-width: 40%;
 	min-width: 40%;
-	height: 5vh;
+	height: 7%;
 	font-family: 'IBM Plex Mono', monospace !important;
 	font-size: 1.1em;
 }

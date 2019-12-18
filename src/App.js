@@ -1,6 +1,13 @@
 import React from 'react';
 
-import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
+import SearchBox from './components/searchbox/searchbox.component';
+import PeopleIcon from '@material-ui/icons/People';
+
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 import './App.css';
 
@@ -9,7 +16,8 @@ class App extends React.Component {
 		super();
 		this.state = {
 			checked: localStorage.getItem('theme') === 'dark' ? true : false,
-			theme: localStorage.getItem('theme')
+			theme: localStorage.getItem('theme'),
+			right: false
 		};
 	}
 
@@ -44,7 +52,46 @@ class App extends React.Component {
 		}
 	};
 
+	toggleDrawer = open => event => {
+		if (
+			event.type === 'keydown' &&
+			(event.key === 'Tab' || event.key === 'Shift')
+		) {
+			return;
+		}
+
+		this.setState({ right: open });
+	};
+
+	sideList = () => {
+		return (
+			<div
+				className='side-drawer'
+				style={{ width: 250 }}
+				role='presentation'
+				onClick={this.toggleDrawer(false)}
+				onKeyDown={this.toggleDrawer(false)}
+			>
+				<List>
+					{[
+						'Omni User 1',
+						'Omni User 2',
+						'Omni User 3',
+						'Omni User 4'
+					].map((text, index) => (
+						<ListItem button key={text}>
+							<ListItemText primary={text} />
+						</ListItem>
+					))}
+				</List>
+				<Divider />
+			</div>
+		);
+	};
+
 	render() {
+		var iconColor = this.state.checked ? 'white' : 'black';
+
 		return (
 			<div className='app'>
 				<div className='nav'>
@@ -57,13 +104,35 @@ class App extends React.Component {
 						/>
 						<span className='slider round' />
 					</label>
-					<p>Omni Users</p>
-					<PeopleAltRoundedIcon className='people' />
+
+					<PeopleIcon
+						className='people-icon'
+						onClick={this.toggleDrawer(true)}
+						style={{ color: iconColor }}
+					/>
+
+					{this.toggleDrawer(true)}
+					<Drawer
+						className='drawer'
+						anchor='right'
+						open={this.state.right}
+						onClose={this.toggleDrawer(false)}
+					>
+						{this.sideList()}
+					</Drawer>
 				</div>
 				<hr></hr>
-				<div className='container'>
-					<input type='search' placeholder='Search..'></input>
-				</div>
+				<p className='title'>
+					<span>&#10024;</span> Omni People <span>&#10024;</span>
+					<br />
+					<span style={{ marginTop: '7px', fontSize: '0.8em' }}>
+						Companion for{' '}
+						<a href='https://www.omni.fyi/'>
+							<i>Omni Wallet</i>
+						</a>
+					</span>
+				</p>
+				<SearchBox />
 			</div>
 		);
 	}
