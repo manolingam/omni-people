@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/omni-people/static/css/main.1269a0b6.chunk.css",
+    "main.css": "/omni-people/static/css/main.0e7a6397.chunk.css",
     "main.js": "/omni-people/static/js/main.0d508d0e.chunk.js",
     "main.js.map": "/omni-people/static/js/main.0d508d0e.chunk.js.map",
     "runtime-main.js": "/omni-people/static/js/runtime-main.500afdd3.js",
@@ -8,15 +8,15 @@
     "static/js/2.25aaf8c3.chunk.js": "/omni-people/static/js/2.25aaf8c3.chunk.js",
     "static/js/2.25aaf8c3.chunk.js.map": "/omni-people/static/js/2.25aaf8c3.chunk.js.map",
     "index.html": "/omni-people/index.html",
-    "precache-manifest.41c854a6d6dc3c42481ae11f737b53dd.js": "/omni-people/precache-manifest.41c854a6d6dc3c42481ae11f737b53dd.js",
+    "precache-manifest.76ab5946e13545c13c0528af84b55f06.js": "/omni-people/precache-manifest.76ab5946e13545c13c0528af84b55f06.js",
     "service-worker.js": "/omni-people/service-worker.js",
-    "static/css/main.1269a0b6.chunk.css.map": "/omni-people/static/css/main.1269a0b6.chunk.css.map",
+    "static/css/main.0e7a6397.chunk.css.map": "/omni-people/static/css/main.0e7a6397.chunk.css.map",
     "static/js/2.25aaf8c3.chunk.js.LICENSE": "/omni-people/static/js/2.25aaf8c3.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.500afdd3.js",
     "static/js/2.25aaf8c3.chunk.js",
-    "static/css/main.1269a0b6.chunk.css",
+    "static/css/main.0e7a6397.chunk.css",
     "static/js/main.0d508d0e.chunk.js"
   ]
 }
