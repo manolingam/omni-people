@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/omni-people/precache-manifest.81d232e15b51fb72cee9c039f9324f2a.js"
+  "/omni-people/precache-manifest.41c854a6d6dc3c42481ae11f737b53dd.js"
 );
 
 self.addEventListener('message', (event) => {
