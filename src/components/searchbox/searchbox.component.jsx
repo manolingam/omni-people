@@ -38,7 +38,7 @@ export class SearchBox extends React.Component {
 		let temp = [];
 		if (e.target.value) {
 			fetch(
-				`http://infinite-garden-52200.herokuapp.com/users/${e.target.value}`
+				`https://infinite-garden-52200.herokuapp.com/users/${e.target.value}`
 			)
 				.then(res => res.json())
 				.then(data => {
