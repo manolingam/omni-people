@@ -115,8 +115,8 @@ input {
 	padding: 8px;
 	max-width: 40%;
 	min-width: 40%;
-	height: 7%;
+	min-height: 20px;
 	font-family: 'IBM Plex Mono', monospace !important;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	margin-right: 5px;
 }
