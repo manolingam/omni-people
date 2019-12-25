@@ -8,7 +8,7 @@ html[data-theme='dark'] {
 	--secondary-color: #282c34;
 }
 
-.app,
+.main,
 .side-drawer {
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
@@ -16,13 +16,16 @@ html[data-theme='dark'] {
 
 .side-drawer {
 	height: 100vh;
+	overflow: scroll;
 }
 
 .container,
 .people {
 	height: 90vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	margin-top: 20px;
 	justify-content: center;
 }
 
@@ -116,4 +119,5 @@ input {
 	height: 7%;
 	font-family: 'IBM Plex Mono', monospace !important;
 	font-size: 1.1em;
+	margin-right: 5px;
 }
