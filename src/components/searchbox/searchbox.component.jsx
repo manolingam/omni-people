@@ -64,6 +64,17 @@ export class SearchBox extends React.Component {
 		let people = this.state.people;
 		return (
 			<div className='search-component'>
+				<p className='title'>
+					<span>&#10024;</span> Omni People <span>&#10024;</span>
+					<br />
+					<span style={{ marginTop: '7px', fontSize: '0.8em' }}>
+						Companion for{' '}
+						<a href='https://www.omni.fyi/'>
+							<i>Omni Wallet</i>
+						</a>
+					</span>
+				</p>
+
 				<input
 					type='search'
 					placeholder='twitter handle..'

@@ -19,8 +19,7 @@ html[data-theme='dark'] {
 	overflow: scroll;
 }
 
-.container,
-.people {
+.container {
 	height: 90vh;
 	display: flex;
 	flex-direction: column;
@@ -91,13 +90,13 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-.title {
+/* .title {
 	position: absolute;
 	margin-top: 19px;
 	width: 100%;
 	text-align: center;
 	font-size: 1.4em;
-}
+} */
 
 .people-icon {
 	margin-left: 90%;

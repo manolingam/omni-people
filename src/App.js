@@ -113,16 +113,7 @@ class App extends React.Component {
 					</Drawer>
 				</div>
 				<hr></hr>
-				<p className='title'>
-					<span>&#10024;</span> Omni People <span>&#10024;</span>
-					<br />
-					<span style={{ marginTop: '7px', fontSize: '0.8em' }}>
-						Companion for{' '}
-						<a href='https://www.omni.fyi/'>
-							<i>Omni Wallet</i>
-						</a>
-					</span>
-				</p>
+
 				<SearchBox />
 			</div>
 		);
