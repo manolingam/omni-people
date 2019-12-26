@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf759aaec98de4f6f20e29592e08883e",
+    "revision": "34ab2eb6b5d73d45914b88de4e203539",
     "url": "/omni-people/index.html"
   },
   {
-    "revision": "2c24f6cab60f31514637",
-    "url": "/omni-people/static/css/main.0e7a6397.chunk.css"
+    "revision": "119beec0d4d4b04e8a5d",
+    "url": "/omni-people/static/css/main.4aad1ee7.chunk.css"
   },
   {
     "revision": "61fb25aab151aba7f29c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/omni-people/static/js/2.25aaf8c3.chunk.js.LICENSE"
   },
   {
-    "revision": "2c24f6cab60f31514637",
-    "url": "/omni-people/static/js/main.0d508d0e.chunk.js"
+    "revision": "119beec0d4d4b04e8a5d",
+    "url": "/omni-people/static/js/main.f6298b1f.chunk.js"
   },
   {
     "revision": "3ecd92fd1d06e36799dd",
