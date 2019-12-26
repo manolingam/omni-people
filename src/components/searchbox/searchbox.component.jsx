@@ -9,8 +9,10 @@ import List from '@material-ui/core/List';
 import Microlink from '@microlink/react';
 
 import './searchbox.style.css';
+// import SimpleSnackbar from '../snackbar/snackbar.component';
 
 let users = [];
+// let snackbar = false;
 
 export const SideList = () => {
 	return (
@@ -49,7 +51,8 @@ export class SearchBox extends React.Component {
 							id: i['id'],
 							name: i['name'],
 							screen_name: i['screen_name'],
-							url: i['url']
+							url: i['url'],
+							profile_pic: i['profile_image_url_https']
 						});
 					});
 
@@ -75,10 +78,6 @@ export class SearchBox extends React.Component {
 						</a>
 					</span>
 				</p>
-				<img
-					src='//pbs.twimg.com/profile_images/1187960049911492610/qefzmIsR_normal.jpg'
-					alt=''
-				/>
 				<input
 					type='search'
 					placeholder='twitter handle..'
@@ -95,6 +94,14 @@ export class SearchBox extends React.Component {
 									flexDirection: 'row'
 								}}
 							>
+								<img
+									style={{
+										borderRadius: '50px',
+										padding: '5px'
+									}}
+									src={person['profile_pic']}
+									alt=''
+								/>
 								<p>{person['name']}</p>
 								<Fab
 									color='primary'
@@ -105,7 +112,10 @@ export class SearchBox extends React.Component {
 										users.push(person['screen_name']);
 										var index = people.indexOf(person);
 										people.splice(index, 1);
-										this.setState({ people: people });
+										this.setState({
+											people: people
+										});
+										// snackbar = true;
 									}}
 								>
 									<AddIcon />
@@ -113,6 +123,7 @@ export class SearchBox extends React.Component {
 							</div>
 						);
 					})}
+					{/* {snackbar ? <SimpleSnackbar /> : null} */}
 				</div>
 			</div>
 		);

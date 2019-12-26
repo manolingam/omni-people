@@ -1,15 +1,21 @@
 html {
 	--primary-color: #282c34;
 	--secondary-color: #fff;
+	--link-color: rgb(32, 71, 179);
 }
 
 html[data-theme='dark'] {
 	--primary-color: rgb(255, 255, 255);
 	--secondary-color: #282c34;
+	--link-color: rgb(238, 202, 44);
 }
 
 body {
 	font-family: 'IBM Plex Mono', monospace !important;
+}
+
+i {
+	color: var(--link-color);
 }
 
 .search-component {
