@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 
 import Fab from '@material-ui/core/Fab';
@@ -74,7 +75,10 @@ export class SearchBox extends React.Component {
 						</a>
 					</span>
 				</p>
-
+				<img
+					src='//pbs.twimg.com/profile_images/1187960049911492610/qefzmIsR_normal.jpg'
+					alt=''
+				/>
 				<input
 					type='search'
 					placeholder='twitter handle..'

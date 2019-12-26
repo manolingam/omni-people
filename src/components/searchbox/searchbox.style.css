@@ -24,6 +24,7 @@ body {
 .box {
 	margin-top: 20px;
 	overflow: scroll;
+	overflow-x: hidden;
 	height: auto;
 	width: 70%;
 	max-height: 400px;
