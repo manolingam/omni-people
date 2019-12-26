@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/omni-people/static/css/main.4aad1ee7.chunk.css",
-    "main.js": "/omni-people/static/js/main.f6298b1f.chunk.js",
-    "main.js.map": "/omni-people/static/js/main.f6298b1f.chunk.js.map",
+    "main.css": "/omni-people/static/css/main.eb2f061c.chunk.css",
+    "main.js": "/omni-people/static/js/main.73eed9dc.chunk.js",
+    "main.js.map": "/omni-people/static/js/main.73eed9dc.chunk.js.map",
     "runtime-main.js": "/omni-people/static/js/runtime-main.500afdd3.js",
     "runtime-main.js.map": "/omni-people/static/js/runtime-main.500afdd3.js.map",
     "static/js/2.25aaf8c3.chunk.js": "/omni-people/static/js/2.25aaf8c3.chunk.js",
     "static/js/2.25aaf8c3.chunk.js.map": "/omni-people/static/js/2.25aaf8c3.chunk.js.map",
     "index.html": "/omni-people/index.html",
-    "precache-manifest.0f182bdeb98ad93ffd0b29d7c188d8cf.js": "/omni-people/precache-manifest.0f182bdeb98ad93ffd0b29d7c188d8cf.js",
+    "precache-manifest.03b30bcbbc5f560f99f29fd39bd9cd98.js": "/omni-people/precache-manifest.03b30bcbbc5f560f99f29fd39bd9cd98.js",
     "service-worker.js": "/omni-people/service-worker.js",
-    "static/css/main.4aad1ee7.chunk.css.map": "/omni-people/static/css/main.4aad1ee7.chunk.css.map",
+    "static/css/main.eb2f061c.chunk.css.map": "/omni-people/static/css/main.eb2f061c.chunk.css.map",
     "static/js/2.25aaf8c3.chunk.js.LICENSE": "/omni-people/static/js/2.25aaf8c3.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.500afdd3.js",
     "static/js/2.25aaf8c3.chunk.js",
-    "static/css/main.4aad1ee7.chunk.css",
-    "static/js/main.f6298b1f.chunk.js"
+    "static/css/main.eb2f061c.chunk.css",
+    "static/js/main.73eed9dc.chunk.js"
   ]
 }
